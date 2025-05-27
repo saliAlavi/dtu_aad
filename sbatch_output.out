@@ -1,0 +1,14 @@
+
+The following have been reloaded with a version change:
+  1) cuda/11.2.2 => cuda/11.8.0
+
+2024-02-04 19:48:11.454805: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-02-04 19:48:11.454920: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-02-04 19:48:11.604075: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-02-04 19:48:11.911743: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-02-04 19:48:26.154809: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Traceback (most recent call last):
+  File "/users/PAS2301/alialavi/projects/AAD-CMAA/train_all.py", line 13, in <module>
+    import tensorflow_hub as hub
+ModuleNotFoundError: No module named 'tensorflow_hub'

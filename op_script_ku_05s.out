@@ -1,0 +1,411 @@
+
+The following have been reloaded with a version change:
+  1) miniconda3/23.3.1-py310 => miniconda3/4.10.3-py37
+
+2024-11-01 08:59:02.330670: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-01 08:59:04.409678: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-11-01 08:59:08.082188: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /apps/miniconda3/4.10.3-py37/lib:/opt/mvapich2/intel/19.0/2.3.3/lib:/opt/intel/19.0.5/debugger_2019/libipt/intel64/lib:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/lib/intel64_lin:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/daal/lib/intel64_lin:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/ipp/lib/intel64_lin:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/mkl/lib/intel64_lin:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/tbb/lib/intel64_lin/gcc4.4:/apps/gnu/8.4.0/lib64:/apps/gnu/8.4.0/lib:/opt/ddn/cci/lib:/opt/ddn/ime/lib:/opt/ddn/isa-l/lib:/apps/cuda/11.2.2/lib64
+2024-11-01 08:59:08.085409: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /apps/miniconda3/4.10.3-py37/lib:/opt/mvapich2/intel/19.0/2.3.3/lib:/opt/intel/19.0.5/debugger_2019/libipt/intel64/lib:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/lib/intel64_lin:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/daal/lib/intel64_lin:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/ipp/lib/intel64_lin:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/mkl/lib/intel64_lin:/opt/intel/19.0.5/compilers_and_libraries_2019/linux/tbb/lib/intel64_lin/gcc4.4:/apps/gnu/8.4.0/lib64:/apps/gnu/8.4.0/lib:/opt/ddn/cci/lib:/opt/ddn/ime/lib:/opt/ddn/isa-l/lib:/apps/cuda/11.2.2/lib64
+2024-11-01 08:59:08.085442: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+DS:kuleuven_50ov_05s/sub10 Fold:0 Rep:0
+Traceback (most recent call last):
+  File "/users/PAS2301/alialavi/projects/AAD-CMAA/train_ku_05s.py", line 181, in <module>
+    (ds_train, ds_test), dataset_info = tfds.load(dataset_name_full, split=[train_split, test_split], shuffle_files=False,with_info=True,)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/logging/__init__.py", line 166, in __call__
+    return function(*args, **kwargs)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/load.py", line 633, in load
+    dbuilder = _fetch_builder(
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/load.py", line 488, in _fetch_builder
+    return builder(name, data_dir=data_dir, try_gcs=try_gcs, **builder_kwargs)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/logging/__init__.py", line 166, in __call__
+    return function(*args, **kwargs)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/load.py", line 215, in builder
+    raise not_found_error
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/load.py", line 196, in builder
+    cls = builder_cls(str(name))
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/load.py", line 121, in builder_cls
+    cls = registered.imported_builder_cls(str(ds_name))
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/registered.py", line 301, in imported_builder_cls
+    raise DatasetNotFoundError(f'Dataset {name} not found.')
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset kuleuven_50ov_05s not found.
+Available datasets:
+	- abstract_reasoning
+	- accentdb
+	- aeslc
+	- aflw2k3d
+	- ag_news_subset
+	- ai2_arc
+	- ai2_arc_with_ir
+	- amazon_us_reviews
+	- anli
+	- answer_equivalence
+	- arc
+	- asqa
+	- asset
+	- assin2
+	- bair_robot_pushing_small
+	- bccd
+	- beans
+	- bee_dataset
+	- beir
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- ble_wind_field
+	- blimp
+	- booksum
+	- bool_q
+	- bot_adversarial_dialogue
+	- bucc
+	- c4
+	- c4_wsrs
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cardiotox
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- cherry_blossoms
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar100_n
+	- cifar10_1
+	- cifar10_corrupted
+	- cifar10_h
+	- cifar10_n
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- clic
+	- clinc_oos
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coco_captions
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- conll2002
+	- conll2003
+	- controlled_noisy_web_labels
+	- coqa
+	- corr2cause
+	- cos_e
+	- cosmos_qa
+	- covid19
+	- covid19sum
+	- crema_d
+	- criteo
+	- cs_restaurants
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- d4rl_adroit_door
+	- d4rl_adroit_hammer
+	- d4rl_adroit_pen
+	- d4rl_adroit_relocate
+	- d4rl_antmaze
+	- d4rl_mujoco_ant
+	- d4rl_mujoco_halfcheetah
+	- d4rl_mujoco_hopper
+	- d4rl_mujoco_walker2d
+	- dart
+	- databricks_dolly
+	- davis
+	- deep1b
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- diamonds
+	- div2k
+	- dmlab
+	- doc_nli
+	- dolphin_number_word
+	- domainnet
+	- downsampled_imagenet
+	- drop
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- e2e_cleaned
+	- efron_morris75
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- fuss
+	- gap
+	- geirhos_conflict_stimuli
+	- gem
+	- genomics_ood
+	- german_credit_numeric
+	- gigaword
+	- glove100_angular
+	- glue
+	- goemotions
+	- gov_report
+	- gpt3
+	- gref
+	- groove
+	- grounded_scan
+	- gsm8k
+	- gtzan
+	- gtzan_music_speech
+	- hellaswag
+	- higgs
+	- hillstrom
+	- horses_or_humans
+	- howell
+	- i_naturalist2017
+	- i_naturalist2018
+	- i_naturalist2021
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_fewshot
+	- imagenet2012_multilabel
+	- imagenet2012_real
+	- imagenet2012_subset
+	- imagenet_a
+	- imagenet_lt
+	- imagenet_pi
+	- imagenet_r
+	- imagenet_resized
+	- imagenet_sketch
+	- imagenet_v2
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- irc_disentanglement
+	- iris
+	- istella
+	- kddcup99
+	- kitti
+	- kmnist
+	- laion400m
+	- lambada
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- locomotion
+	- lost_and_found
+	- lsun
+	- lvis
+	- malaria
+	- math_dataset
+	- math_qa
+	- mctaco
+	- media_sum
+	- mlqa
+	- mnist
+	- mnist_corrupted
+	- movie_lens
+	- movie_rationales
+	- movielens
+	- moving_mnist
+	- mrqa
+	- mslr_web
+	- mt_opt
+	- mtnt
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_instructions
+	- natural_questions
+	- natural_questions_open
+	- newsroom
+	- nsynth
+	- nyu_depth_v2
+	- ogbg_molpcba
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- openbookqa
+	- opinion_abstracts
+	- opinosis
+	- opus
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- pass
+	- patch_camelyon
+	- paws_wiki
+	- paws_x_wiki
+	- penguins
+	- pet_finder
+	- pg19
+	- piqa
+	- places365_small
+	- placesfull
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- protein_net
+	- q_re_cc
+	- qa4mre
+	- qasc
+	- quac
+	- quality
+	- quickdraw_bitmap
+	- race
+	- radon
+	- real_toxicity_prompts
+	- reddit
+	- reddit_disentanglement
+	- reddit_tifu
+	- ref_coco
+	- resisc45
+	- rlu_atari
+	- rlu_atari_checkpoints
+	- rlu_atari_checkpoints_ordered
+	- rlu_control_suite
+	- rlu_dmlab_explore_object_rewards_few
+	- rlu_dmlab_explore_object_rewards_many
+	- rlu_dmlab_rooms_select_nonmatching_object
+	- rlu_dmlab_rooms_watermaze
+	- rlu_dmlab_seekavoid_arena01
+	- rlu_locomotion
+	- rlu_rwrl
+	- robomimic_mg
+	- robomimic_mh
+	- robomimic_ph
+	- robonet
+	- robosuite_panda_pick_place_can
+	- rock_paper_scissors
+	- rock_you
+	- s3o4d
+	- salient_span_wikipedia
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- schema_guided_dialogue
+	- sci_tail
+	- scicite
+	- scientific_papers
+	- scrolls
+	- segment_anything
+	- sentiment140
+	- shapes3d
+	- sift1m
+	- simpte
+	- siscore
+	- smallnorb
+	- smartwatch_gestures
+	- snli
+	- so2sat
+	- speech_commands
+	- spoken_digit
+	- squad
+	- squad_question_generation
+	- stanford_dogs
+	- stanford_online_products
+	- star_cfq
+	- starcraft_video
+	- stl10
+	- story_cloze
+	- summscreen
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- symmetric_solids
+	- tao
+	- tatoeba
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trec
+	- trivia_qa
+	- tydi_qa
+	- uc_merced
+	- ucf101
+	- unified_qa
+	- universal_dependencies
+	- unnatural_instructions
+	- user_libri_audio
+	- user_libri_text
+	- vctk
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- voxforge
+	- waymo_open_dataset
+	- web_graph
+	- web_nlg
+	- web_questions
+	- webvid
+	- wider_face
+	- wiki40b
+	- wiki_auto
+	- wiki_bio
+	- wiki_dialog
+	- wiki_table_questions
+	- wiki_table_text
+	- wikiann
+	- wikihow
+	- wikipedia
+	- wikipedia_toxicity_subtypes
+	- wine_quality
+	- winogrande
+	- wit
+	- wit_kaggle
+	- wmt13_translate
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- wordnet
+	- wsc273
+	- xnli
+	- xquad
+	- xsum
+	- xtreme_pawsx
+	- xtreme_pos
+	- xtreme_s
+	- xtreme_xnli
+	- yahoo_ltrc
+	- yelp_polarity_reviews
+	- yes_no
+	- youtube_vis
+
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - the module defining the dataset class is imported
+
+The builder directory /users/PAS2301/alialavi/tensorflow_datasets/kuleuven_50ov_05s/sub10 doesn't contain any versions.
+No builder could be found in the directory: /users/PAS2301/alialavi/tensorflow_datasets for the builder: kuleuven_50ov_05s.
+No registered data_dirs were found in:
+	- /users/PAS2301/alialavi/tensorflow_datasets
+

@@ -1,0 +1,1917 @@
+INFO[build.py]: Loading dataset  from path: /users/PAS2301/alialavi/projects/AAD-CMAA/create_dataset/dtu_td_cmaa_50ov_01s/dtu_td_cmaa_50ov_01s_dataset_builder.py
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub1/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub1/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub1/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub1/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 1
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub1/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub2/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub2/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub2/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub2/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 2
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub2/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub3/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub3/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub3/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub3/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 3
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub3/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub4/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub4/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub4/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub4/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 4
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub4/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub5/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub5/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub5/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub5/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 5
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub5/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub6/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub6/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub6/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub6/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 6
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub6/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub7/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub7/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub7/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub7/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 7
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub7/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub8/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub8/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub8/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub8/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 8
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub8/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub9/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub9/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub9/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub9/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 9
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub9/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub10/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub10/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub10/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub10/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 10
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub10/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub11/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub11/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub11/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub11/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 11
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub11/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub12/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub12/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub12/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub12/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 12
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub12/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub13/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub13/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub13/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub13/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 13
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub13/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub14/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub14/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub14/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub14/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 14
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub14/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub15/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub15/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub15/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub15/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 15
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub15/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub16/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub16/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub16/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub16/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 16
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub16/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub17/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub17/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub17/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub17/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 17
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub17/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub18/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/sub18/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub18/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/sub18/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, subject 18
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/sub18/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=1.84 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=59940, num_shards=8>,
+    },
+    citation="""""",
+)
+
+2024-11-07 15:12:45.371287: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-07 15:12:47.160574: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-11-07 15:12:50.208495: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/cv2/../../lib64:/apps/spack/0.17/ascend/linux-rhel8-zen/cudnn/gcc/8.4.1/8.6.0.163-11.8-hrxt3zr/lib:/apps/spack/0.17/root/linux-rhel8-zen/cuda/gcc/8.4.1/11.8.0-eyqbbsj/lib64:/apps/spack/0.17/ascend/linux-rhel8-zen2/mvapich2/intel/2021.4.0/2.3.7-tlkt2xz/lib:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/compiler/2021.4.0/linux/lib:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/compiler/2021.4.0/linux/lib/x64:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/compiler/2021.4.0/linux/lib/emu:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/compiler/2021.4.0/linux/compiler/lib/intel64_lin:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/lib:/apps/spack/0.17/root/linux-rhel8-zen/intel-oneapi-mkl/gcc/8.4.1/2021.4.0-nr36qjw/mkl/2021.4.0/lib/intel64:/apps/spack/0.17/root/linux-rhel8-zen/intel-oneapi-mkl/gcc/8.4.1/2021.4.0-nr36qjw/lib:/apps/spack/0.17/ascend/linux-rhel8-zen/gcc/gcc/8.4.1/10.3.0-btgsyjw/lib64:/apps/spack/0.17/ascend/linux-rhel8-zen/gcc/gcc/8.4.1/10.3.0-btgsyjw/lib
+2024-11-07 15:12:50.211197: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/cv2/../../lib64:/apps/spack/0.17/ascend/linux-rhel8-zen/cudnn/gcc/8.4.1/8.6.0.163-11.8-hrxt3zr/lib:/apps/spack/0.17/root/linux-rhel8-zen/cuda/gcc/8.4.1/11.8.0-eyqbbsj/lib64:/apps/spack/0.17/ascend/linux-rhel8-zen2/mvapich2/intel/2021.4.0/2.3.7-tlkt2xz/lib:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/compiler/2021.4.0/linux/lib:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/compiler/2021.4.0/linux/lib/x64:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/compiler/2021.4.0/linux/lib/emu:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/compiler/2021.4.0/linux/compiler/lib/intel64_lin:/apps/spack/0.17/ascend/linux-rhel8-zen/intel-oneapi-compilers/gcc/8.4.1/2021.4.0-4num6om/lib:/apps/spack/0.17/root/linux-rhel8-zen/intel-oneapi-mkl/gcc/8.4.1/2021.4.0-nr36qjw/mkl/2021.4.0/lib/intel64:/apps/spack/0.17/root/linux-rhel8-zen/intel-oneapi-mkl/gcc/8.4.1/2021.4.0-nr36qjw/lib:/apps/spack/0.17/ascend/linux-rhel8-zen/gcc/gcc/8.4.1/10.3.0-btgsyjw/lib64:/apps/spack/0.17/ascend/linux-rhel8-zen/gcc/gcc/8.4.1/10.3.0-btgsyjw/lib
+2024-11-07 15:12:50.211211: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2024-11-07 15:12:51.036034: E tensorflow/stream_executor/cuda/cuda_driver.cc:265] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2024-11-07 15:12:51.036094: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: a0019.ten.osc.edu
+2024-11-07 15:12:51.036104: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: a0019.ten.osc.edu
+2024-11-07 15:12:51.036194: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 550.90.12
+2024-11-07 15:12:51.036218: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 550.90.12
+2024-11-07 15:12:51.036227: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 550.90.12
+2024-11-07 15:12:56.805611: W tensorflow/core/platform/cloud/google_auth_provider.cc:184] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "NOT_FOUND: Could not locate the credentials file.". Retrieving token from GCE failed with "FAILED_PRECONDITION: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Could not resolve host: metadata".
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/all/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/all/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, all subjects
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=33.03 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=1078920, num_shards=256>,
+        'train': <SplitInfo num_examples=1078920, num_shards=256>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e1/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/all_e1/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e1/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/all_e1/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, all subjects except 1
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e1/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=16.52 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=1018980, num_shards=128>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e2/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/all_e2/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e2/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/all_e2/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, all subjects except 2
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e2/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=16.52 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=1018980, num_shards=128>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e3/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/all_e3/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e3/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/all_e3/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, all subjects except 3
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e3/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=16.52 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=1018980, num_shards=128>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e4/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/all_e4/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e4/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/all_e4/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, all subjects except 4
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e4/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=16.52 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=1018980, num_shards=128>,
+    },
+    citation="""""",
+)
+
+INFO[dataset_info.py]: Load dataset info from /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e5/1.0.0
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/all_e5/1.0.0...
+INFO[dataset_builder.py]: Reusing dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e5/1.0.0)
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='dtu_td_cmaa_50ov_01s',
+    full_name='dtu_td_cmaa_50ov_01s/all_e5/1.0.0',
+    description="""
+    
+    """,
+    config_description="""
+    5 second splits, all subjects except 5
+    """,
+    homepage='https://zenodo.org/record/3377911',
+    data_dir='/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e5/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=16.52 GiB,
+    features=FeaturesDict({
+        'att_gender': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'att_lr': ClassLabel(shape=(), dtype=int64, num_classes=2),
+        'aucostic': ClassLabel(shape=(), dtype=int64, num_classes=3),
+        'audio_f_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_f_raw': Tensor(shape=(1600,), dtype=float32),
+        'audio_m_ds': Tensor(shape=(6,), dtype=float32),
+        'audio_m_raw': Tensor(shape=(1600,), dtype=float32),
+        'eeg': Tensor(shape=(6, 66), dtype=float32),
+        'eeg_csp': Tensor(shape=(64, 6), dtype=float32),
+        'eeg_csp_avg': Tensor(shape=(64,), dtype=float32),
+    }),
+    supervised_keys=None,
+    disable_shuffling=True,
+    splits={
+        'test': <SplitInfo num_examples=59940, num_shards=8>,
+        'train': <SplitInfo num_examples=1018980, num_shards=128>,
+    },
+    citation="""""",
+)
+
+INFO[build.py]: download_and_prepare for dataset dtu_td_cmaa_50ov_01s/all_e6/1.0.0...
+INFO[dataset_builder.py]: Generating dataset dtu_td_cmaa_50ov_01s (/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e6/1.0.0)
+Downloading and preparing dataset Unknown size (download: Unknown size, generated: Unknown size, total: Unknown size) to /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e6/1.0.0...
+Generating splits...:   0%|          | 0/2 [00:00<?, ? splits/s]
+Generating train examples...: 0 examples [00:00, ? examples/s][ASubject: 1
+Computing rank from data with rank=None
+    Using tolerance 3e+02 (2.2e-16 eps * 66 dim * 2e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 1.3e+03 (2.2e-16 eps * 66 dim * 9.1e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3e+02 (2.2e-16 eps * 66 dim * 2e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 1.3e+03 (2.2e-16 eps * 66 dim * 9.1e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 1 examples [00:28, 28.88s/ examples][A
+Generating train examples...: 1425 examples [00:29, 67.14 examples/s][A
+Generating train examples...: 2849 examples [00:30, 152.73 examples/s][A
+Generating train examples...: 4282 examples [00:31, 258.55 examples/s][A
+Generating train examples...: 5715 examples [00:32, 382.58 examples/s][A
+Generating train examples...: 7147 examples [00:33, 520.12 examples/s][A
+Generating train examples...: 8578 examples [00:34, 662.90 examples/s][A
+Generating train examples...: 10005 examples [00:35, 803.23 examples/s][A
+Generating train examples...: 11432 examples [00:36, 932.19 examples/s][A
+Generating train examples...: 12857 examples [00:37, 1044.48 examples/s][A
+Generating train examples...: 14282 examples [00:38, 1137.47 examples/s][A
+Generating train examples...: 15706 examples [00:39, 1211.20 examples/s][A
+Generating train examples...: 17129 examples [00:40, 1264.38 examples/s][A
+Generating train examples...: 18547 examples [00:41, 1304.58 examples/s][A
+Generating train examples...: 19969 examples [00:42, 1337.81 examples/s][A
+Generating train examples...: 21392 examples [00:43, 1362.22 examples/s][A
+Generating train examples...: 22816 examples [00:44, 1380.18 examples/s][A
+Generating train examples...: 24240 examples [00:45, 1392.93 examples/s][A
+Generating train examples...: 25662 examples [00:46, 1399.06 examples/s][A
+Generating train examples...: 27081 examples [00:47, 1401.14 examples/s][A
+Generating train examples...: 28496 examples [00:48, 1402.35 examples/s][A
+Generating train examples...: 29909 examples [00:49, 1404.83 examples/s][A
+Generating train examples...: 31323 examples [00:50, 1407.39 examples/s][A
+Generating train examples...: 32745 examples [00:51, 1411.47 examples/s][A
+Generating train examples...: 34167 examples [00:52, 1414.36 examples/s][A
+Generating train examples...: 35590 examples [00:53, 1416.78 examples/s][A
+Generating train examples...: 37009 examples [00:54, 1417.40 examples/s][A
+Generating train examples...: 38431 examples [00:55, 1418.62 examples/s][A
+Generating train examples...: 39851 examples [00:56, 1418.81 examples/s][A
+Generating train examples...: 41271 examples [00:57, 1414.67 examples/s][A
+Generating train examples...: 42695 examples [00:58, 1417.27 examples/s][A
+Generating train examples...: 44119 examples [00:59, 1419.22 examples/s][A
+Generating train examples...: 45539 examples [01:00, 1419.14 examples/s][A
+Generating train examples...: 46961 examples [01:01, 1419.73 examples/s][A
+Generating train examples...: 48383 examples [01:02, 1420.31 examples/s][A
+Generating train examples...: 49806 examples [01:03, 1421.08 examples/s][A
+Generating train examples...: 51228 examples [01:04, 1417.52 examples/s][A
+Generating train examples...: 52646 examples [01:05, 1416.73 examples/s][A
+Generating train examples...: 54070 examples [01:06, 1418.86 examples/s][A
+Generating train examples...: 55490 examples [01:07, 1419.19 examples/s][A
+Generating train examples...: 56914 examples [01:08, 1420.44 examples/s][A
+Generating train examples...: 58338 examples [01:09, 1421.46 examples/s][A
+Generating train examples...: 59760 examples [01:10, 1419.01 examples/s][Acsp shape (59940, 64, 6)
+Subject: 2
+Computing rank from data with rank=None
+    Using tolerance 8.4e+02 (2.2e-16 eps * 66 dim * 5.7e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 1.2e+03 (2.2e-16 eps * 66 dim * 8e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 8.4e+02 (2.2e-16 eps * 66 dim * 5.7e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 1.2e+03 (2.2e-16 eps * 66 dim * 8e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 61180 examples [01:22, 351.52 examples/s] [A
+Generating train examples...: 62605 examples [01:23, 454.37 examples/s][A
+Generating train examples...: 64026 examples [01:25, 499.99 examples/s][A
+Generating train examples...: 65400 examples [01:26, 614.39 examples/s][A
+Generating train examples...: 66774 examples [01:27, 734.03 examples/s][A
+Generating train examples...: 68147 examples [01:28, 851.41 examples/s][A
+Generating train examples...: 69521 examples [01:29, 959.97 examples/s][A
+Generating train examples...: 70896 examples [01:30, 1054.90 examples/s][A
+Generating train examples...: 72274 examples [01:31, 1134.39 examples/s][A
+Generating train examples...: 73650 examples [01:32, 1197.24 examples/s][A
+Generating train examples...: 75020 examples [01:33, 1244.05 examples/s][A
+Generating train examples...: 76395 examples [01:34, 1280.58 examples/s][A
+Generating train examples...: 77769 examples [01:35, 1307.17 examples/s][A
+Generating train examples...: 79148 examples [01:36, 1327.73 examples/s][A
+Generating train examples...: 80524 examples [01:37, 1341.73 examples/s][A
+Generating train examples...: 81898 examples [01:38, 1351.19 examples/s][A
+Generating train examples...: 83272 examples [01:39, 1356.79 examples/s][A
+Generating train examples...: 84649 examples [01:40, 1362.67 examples/s][A
+Generating train examples...: 86027 examples [01:41, 1367.14 examples/s][A
+Generating train examples...: 87402 examples [01:42, 1369.06 examples/s][A
+Generating train examples...: 88779 examples [01:43, 1371.32 examples/s][A
+Generating train examples...: 90158 examples [01:44, 1373.52 examples/s][A
+Generating train examples...: 91535 examples [01:45, 1374.41 examples/s][A
+Generating train examples...: 92912 examples [01:46, 1374.35 examples/s][A
+Generating train examples...: 94288 examples [01:47, 1374.28 examples/s][A
+Generating train examples...: 95664 examples [01:48, 1374.48 examples/s][A
+Generating train examples...: 97040 examples [01:49, 1374.75 examples/s][A
+Generating train examples...: 98416 examples [01:50, 1372.75 examples/s][A
+Generating train examples...: 99792 examples [01:51, 1373.45 examples/s][A
+Generating train examples...: 101167 examples [01:52, 1373.65 examples/s][A
+Generating train examples...: 102541 examples [01:53, 1373.05 examples/s][A
+Generating train examples...: 103915 examples [01:54, 1373.16 examples/s][A
+Generating train examples...: 105289 examples [01:55, 1373.14 examples/s][A
+Generating train examples...: 106664 examples [01:56, 1373.44 examples/s][A
+Generating train examples...: 108038 examples [01:57, 1373.50 examples/s][A
+Generating train examples...: 109413 examples [01:58, 1373.83 examples/s][A
+Generating train examples...: 110787 examples [01:59, 1373.81 examples/s][A
+Generating train examples...: 112162 examples [02:00, 1373.93 examples/s][A
+Generating train examples...: 113538 examples [02:01, 1374.29 examples/s][A
+Generating train examples...: 114913 examples [02:02, 1374.44 examples/s][A
+Generating train examples...: 116289 examples [02:03, 1374.71 examples/s][A
+Generating train examples...: 117664 examples [02:04, 1373.39 examples/s][A
+Generating train examples...: 119038 examples [02:05, 1373.10 examples/s][Acsp shape (59940, 64, 6)
+Subject: 3
+Computing rank from data with rank=None
+    Using tolerance 8.5e+02 (2.2e-16 eps * 66 dim * 5.8e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.2e+02 (2.2e-16 eps * 66 dim * 1.5e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 8.5e+02 (2.2e-16 eps * 66 dim * 5.8e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.2e+02 (2.2e-16 eps * 66 dim * 1.5e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 120412 examples [02:15, 377.82 examples/s] [A
+Generating train examples...: 121790 examples [02:16, 483.22 examples/s][A
+Generating train examples...: 123168 examples [02:17, 600.29 examples/s][A
+Generating train examples...: 124548 examples [02:18, 723.09 examples/s][A
+Generating train examples...: 125926 examples [02:19, 843.30 examples/s][A
+Generating train examples...: 127307 examples [02:20, 954.96 examples/s][A
+Generating train examples...: 128688 examples [02:21, 1052.37 examples/s][A
+Generating train examples...: 130069 examples [02:22, 1133.23 examples/s][A
+Generating train examples...: 131446 examples [02:23, 1196.49 examples/s][A
+Generating train examples...: 132825 examples [02:24, 1245.81 examples/s][A
+Generating train examples...: 134205 examples [02:25, 1283.07 examples/s][A
+Generating train examples...: 135585 examples [02:26, 1310.55 examples/s][A
+Generating train examples...: 136965 examples [02:27, 1330.46 examples/s][A
+Generating train examples...: 138343 examples [02:28, 1344.11 examples/s][A
+Generating train examples...: 139724 examples [02:29, 1354.77 examples/s][A
+Generating train examples...: 141104 examples [02:30, 1362.19 examples/s][A
+Generating train examples...: 142485 examples [02:31, 1367.53 examples/s][A
+Generating train examples...: 143864 examples [02:32, 1370.05 examples/s][A
+Generating train examples...: 145245 examples [02:33, 1373.18 examples/s][A
+Generating train examples...: 146625 examples [02:34, 1375.15 examples/s][A
+Generating train examples...: 148004 examples [02:35, 1375.92 examples/s][A
+Generating train examples...: 149383 examples [02:36, 1374.75 examples/s][A
+Generating train examples...: 150761 examples [02:37, 1375.67 examples/s][A
+Generating train examples...: 152138 examples [02:38, 1376.00 examples/s][A
+Generating train examples...: 153516 examples [02:39, 1376.56 examples/s][A
+Generating train examples...: 154894 examples [02:40, 1375.90 examples/s][A
+Generating train examples...: 156273 examples [02:41, 1376.54 examples/s][A
+Generating train examples...: 157651 examples [02:42, 1376.70 examples/s][A
+Generating train examples...: 159028 examples [02:43, 1376.60 examples/s][A
+Generating train examples...: 160406 examples [02:44, 1376.77 examples/s][A
+Generating train examples...: 161784 examples [02:45, 1376.86 examples/s][A
+Generating train examples...: 163161 examples [02:46, 1376.87 examples/s][A
+Generating train examples...: 164539 examples [02:47, 1377.05 examples/s][A
+Generating train examples...: 165917 examples [02:48, 1376.83 examples/s][A
+Generating train examples...: 167295 examples [02:49, 1377.05 examples/s][A
+Generating train examples...: 168673 examples [02:50, 1376.65 examples/s][A
+Generating train examples...: 170051 examples [02:51, 1376.79 examples/s][A
+Generating train examples...: 171428 examples [02:52, 1376.76 examples/s][A
+Generating train examples...: 172807 examples [02:53, 1377.15 examples/s][A
+Generating train examples...: 174185 examples [02:54, 1377.22 examples/s][A
+Generating train examples...: 175563 examples [02:55, 1377.07 examples/s][A
+Generating train examples...: 176941 examples [02:56, 1377.21 examples/s][A
+Generating train examples...: 178319 examples [02:57, 1377.27 examples/s][A
+Generating train examples...: 179698 examples [02:58, 1377.50 examples/s][Acsp shape (59940, 64, 6)
+Subject: 4
+Computing rank from data with rank=None
+    Using tolerance 4.1e+02 (2.2e-16 eps * 66 dim * 2.8e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.5e+02 (2.2e-16 eps * 66 dim * 2.4e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 4.1e+02 (2.2e-16 eps * 66 dim * 2.8e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.5e+02 (2.2e-16 eps * 66 dim * 2.4e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 181076 examples [03:08, 364.02 examples/s] [A
+Generating train examples...: 182450 examples [03:09, 466.72 examples/s][A
+Generating train examples...: 183828 examples [03:10, 582.25 examples/s][A
+Generating train examples...: 185207 examples [03:11, 704.42 examples/s][A
+Generating train examples...: 186587 examples [03:12, 825.76 examples/s][A
+Generating train examples...: 187966 examples [03:13, 938.75 examples/s][A
+Generating train examples...: 189345 examples [03:14, 1038.19 examples/s][A
+Generating train examples...: 190725 examples [03:15, 1121.42 examples/s][A
+Generating train examples...: 192105 examples [03:16, 1188.23 examples/s][A
+Generating train examples...: 193485 examples [03:17, 1239.79 examples/s][A
+Generating train examples...: 194865 examples [03:18, 1278.55 examples/s][A
+Generating train examples...: 196245 examples [03:19, 1307.17 examples/s][A
+Generating train examples...: 197625 examples [03:20, 1328.19 examples/s][A
+Generating train examples...: 199005 examples [03:21, 1343.20 examples/s][A
+Generating train examples...: 200386 examples [03:22, 1354.05 examples/s][A
+Generating train examples...: 201767 examples [03:23, 1361.83 examples/s][A
+Generating train examples...: 203148 examples [03:24, 1367.42 examples/s][A
+Generating train examples...: 204529 examples [03:25, 1371.41 examples/s][A
+Generating train examples...: 205910 examples [03:26, 1373.86 examples/s][A
+Generating train examples...: 207291 examples [03:27, 1375.60 examples/s][A
+Generating train examples...: 208672 examples [03:28, 1376.93 examples/s][A
+Generating train examples...: 210053 examples [03:29, 1378.14 examples/s][A
+Generating train examples...: 211434 examples [03:30, 1378.82 examples/s][A
+Generating train examples...: 212816 examples [03:31, 1379.47 examples/s][A
+Generating train examples...: 214197 examples [03:32, 1378.67 examples/s][A
+Generating train examples...: 215577 examples [03:33, 1378.51 examples/s][A
+Generating train examples...: 216957 examples [03:34, 1378.36 examples/s][A
+Generating train examples...: 218336 examples [03:35, 1377.95 examples/s][A
+Generating train examples...: 219715 examples [03:36, 1376.63 examples/s][A
+Generating train examples...: 221092 examples [03:37, 1375.57 examples/s][A
+Generating train examples...: 222468 examples [03:38, 1375.06 examples/s][A
+Generating train examples...: 223844 examples [03:39, 1374.14 examples/s][A
+Generating train examples...: 225219 examples [03:40, 1372.72 examples/s][A
+Generating train examples...: 226592 examples [03:41, 1372.27 examples/s][A
+Generating train examples...: 227965 examples [03:42, 1371.77 examples/s][A
+Generating train examples...: 229337 examples [03:43, 1371.36 examples/s][A
+Generating train examples...: 230709 examples [03:44, 1370.18 examples/s][A
+Generating train examples...: 232081 examples [03:45, 1370.60 examples/s][A
+Generating train examples...: 233453 examples [03:46, 1370.96 examples/s][A
+Generating train examples...: 234826 examples [03:47, 1371.47 examples/s][A
+Generating train examples...: 236198 examples [03:48, 1370.41 examples/s][A
+Generating train examples...: 237571 examples [03:49, 1371.17 examples/s][A
+Generating train examples...: 238944 examples [03:50, 1371.70 examples/s][Acsp shape (59940, 64, 6)
+Subject: 5
+Computing rank from data with rank=None
+    Using tolerance 3.1e+02 (2.2e-16 eps * 66 dim * 2.1e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.9e+02 (2.2e-16 eps * 66 dim * 2.7e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.1e+02 (2.2e-16 eps * 66 dim * 2.1e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.9e+02 (2.2e-16 eps * 66 dim * 2.7e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 240316 examples [04:00, 375.24 examples/s] [A
+Generating train examples...: 241693 examples [04:01, 480.27 examples/s][A
+Generating train examples...: 243070 examples [04:02, 597.08 examples/s][A
+Generating train examples...: 244447 examples [04:03, 719.45 examples/s][A
+Generating train examples...: 245823 examples [04:04, 839.63 examples/s][A
+Generating train examples...: 247201 examples [04:05, 951.15 examples/s][A
+Generating train examples...: 248578 examples [04:06, 1048.35 examples/s][A
+Generating train examples...: 249955 examples [04:07, 1129.18 examples/s][A
+Generating train examples...: 251328 examples [04:08, 1192.56 examples/s][A
+Generating train examples...: 252704 examples [04:09, 1242.22 examples/s][A
+Generating train examples...: 254081 examples [04:10, 1279.68 examples/s][A
+Generating train examples...: 255459 examples [04:11, 1307.59 examples/s][A
+Generating train examples...: 256837 examples [04:12, 1327.87 examples/s][A
+Generating train examples...: 258215 examples [04:13, 1342.24 examples/s][A
+Generating train examples...: 259593 examples [04:14, 1352.71 examples/s][A
+Generating train examples...: 260969 examples [04:15, 1359.49 examples/s][A
+Generating train examples...: 262344 examples [04:16, 1364.05 examples/s][A
+Generating train examples...: 263720 examples [04:17, 1367.53 examples/s][A
+Generating train examples...: 265096 examples [04:18, 1369.80 examples/s][A
+Generating train examples...: 266472 examples [04:19, 1371.45 examples/s][A
+Generating train examples...: 267848 examples [04:20, 1372.57 examples/s][A
+Generating train examples...: 269227 examples [04:21, 1374.43 examples/s][A
+Generating train examples...: 270606 examples [04:22, 1375.70 examples/s][A
+Generating train examples...: 271983 examples [04:23, 1375.95 examples/s][A
+Generating train examples...: 273362 examples [04:24, 1376.69 examples/s][A
+Generating train examples...: 274741 examples [04:25, 1377.31 examples/s][A
+Generating train examples...: 276119 examples [04:26, 1376.59 examples/s][A
+Generating train examples...: 277499 examples [04:27, 1377.33 examples/s][A
+Generating train examples...: 278878 examples [04:28, 1377.81 examples/s][A
+Generating train examples...: 280258 examples [04:29, 1378.20 examples/s][A
+Generating train examples...: 281637 examples [04:30, 1376.98 examples/s][A
+Generating train examples...: 283016 examples [04:31, 1377.49 examples/s][A
+Generating train examples...: 284396 examples [04:32, 1377.94 examples/s][A
+Generating train examples...: 285775 examples [04:33, 1377.99 examples/s][A
+Generating train examples...: 287154 examples [04:34, 1376.76 examples/s][A
+Generating train examples...: 288531 examples [04:35, 1376.66 examples/s][A
+Generating train examples...: 289908 examples [04:36, 1376.59 examples/s][A
+Generating train examples...: 291285 examples [04:37, 1376.43 examples/s][A
+Generating train examples...: 292662 examples [04:38, 1374.96 examples/s][A
+Generating train examples...: 294037 examples [04:39, 1374.53 examples/s][A
+Generating train examples...: 295412 examples [04:40, 1373.44 examples/s][A
+Generating train examples...: 296788 examples [04:41, 1373.92 examples/s][A
+Generating train examples...: 298162 examples [04:42, 1373.32 examples/s][A
+Generating train examples...: 299536 examples [04:43, 1373.18 examples/s][Acsp shape (59940, 64, 6)
+Subject: 7
+Computing rank from data with rank=None
+    Using tolerance 3.2e+02 (2.2e-16 eps * 66 dim * 2.2e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.5e+02 (2.2e-16 eps * 66 dim * 1.7e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.2e+02 (2.2e-16 eps * 66 dim * 2.2e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.5e+02 (2.2e-16 eps * 66 dim * 1.7e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 300910 examples [04:53, 367.34 examples/s] [A
+Generating train examples...: 302286 examples [04:54, 470.97 examples/s][A
+Generating train examples...: 303664 examples [04:55, 587.05 examples/s][A
+Generating train examples...: 305044 examples [04:56, 709.56 examples/s][A
+Generating train examples...: 306423 examples [04:57, 830.56 examples/s][A
+Generating train examples...: 307801 examples [04:58, 942.84 examples/s][A
+Generating train examples...: 309180 examples [04:59, 1041.64 examples/s][A
+Generating train examples...: 310559 examples [05:00, 1123.98 examples/s][A
+Generating train examples...: 311937 examples [05:01, 1189.32 examples/s][A
+Generating train examples...: 313315 examples [05:02, 1239.97 examples/s][A
+Generating train examples...: 314693 examples [05:03, 1277.69 examples/s][A
+Generating train examples...: 316071 examples [05:04, 1305.95 examples/s][A
+Generating train examples...: 317448 examples [05:05, 1325.58 examples/s][A
+Generating train examples...: 318825 examples [05:06, 1340.32 examples/s][A
+Generating train examples...: 320201 examples [05:07, 1350.77 examples/s][A
+Generating train examples...: 321577 examples [05:08, 1358.15 examples/s][A
+Generating train examples...: 322953 examples [05:09, 1362.04 examples/s][A
+Generating train examples...: 324328 examples [05:10, 1365.76 examples/s][A
+Generating train examples...: 325703 examples [05:11, 1368.41 examples/s][A
+Generating train examples...: 327080 examples [05:12, 1370.91 examples/s][A
+Generating train examples...: 328457 examples [05:13, 1372.59 examples/s][A
+Generating train examples...: 329833 examples [05:14, 1372.45 examples/s][A
+Generating train examples...: 331210 examples [05:15, 1373.70 examples/s][A
+Generating train examples...: 332586 examples [05:16, 1374.17 examples/s][A
+Generating train examples...: 333962 examples [05:17, 1374.64 examples/s][A
+Generating train examples...: 335338 examples [05:18, 1373.87 examples/s][A
+Generating train examples...: 336715 examples [05:19, 1374.60 examples/s][A
+Generating train examples...: 338090 examples [05:20, 1374.52 examples/s][A
+Generating train examples...: 339466 examples [05:21, 1374.75 examples/s][A
+Generating train examples...: 340841 examples [05:22, 1373.83 examples/s][A
+Generating train examples...: 342216 examples [05:23, 1374.07 examples/s][A
+Generating train examples...: 343592 examples [05:24, 1374.55 examples/s][A
+Generating train examples...: 344969 examples [05:25, 1374.99 examples/s][A
+Generating train examples...: 346345 examples [05:26, 1374.36 examples/s][A
+Generating train examples...: 347722 examples [05:27, 1374.94 examples/s][A
+Generating train examples...: 349098 examples [05:28, 1375.20 examples/s][A
+Generating train examples...: 350475 examples [05:29, 1375.61 examples/s][A
+Generating train examples...: 351851 examples [05:30, 1375.45 examples/s][A
+Generating train examples...: 353228 examples [05:31, 1375.74 examples/s][A
+Generating train examples...: 354604 examples [05:32, 1375.75 examples/s][A
+Generating train examples...: 355982 examples [05:33, 1376.21 examples/s][A
+Generating train examples...: 357359 examples [05:34, 1376.44 examples/s][A
+Generating train examples...: 358736 examples [05:35, 1376.31 examples/s][Acsp shape (59940, 64, 6)
+Subject: 8
+Computing rank from data with rank=None
+    Using tolerance 3.9e+02 (2.2e-16 eps * 66 dim * 2.6e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 4.4e+02 (2.2e-16 eps * 66 dim * 3e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.9e+02 (2.2e-16 eps * 66 dim * 2.6e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 4.4e+02 (2.2e-16 eps * 66 dim * 3e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 360113 examples [05:45, 373.22 examples/s] [A
+Generating train examples...: 361494 examples [05:46, 478.10 examples/s][A
+Generating train examples...: 362877 examples [05:47, 595.17 examples/s][A
+Generating train examples...: 364258 examples [05:48, 717.71 examples/s][A
+Generating train examples...: 365640 examples [05:49, 838.75 examples/s][A
+Generating train examples...: 367022 examples [05:50, 950.87 examples/s][A
+Generating train examples...: 368403 examples [05:51, 1048.79 examples/s][A
+Generating train examples...: 369784 examples [05:52, 1130.17 examples/s][A
+Generating train examples...: 371167 examples [05:53, 1195.70 examples/s][A
+Generating train examples...: 372549 examples [05:54, 1246.10 examples/s][A
+Generating train examples...: 373931 examples [05:55, 1283.89 examples/s][A
+Generating train examples...: 375314 examples [05:56, 1311.85 examples/s][A
+Generating train examples...: 376697 examples [05:57, 1332.19 examples/s][A
+Generating train examples...: 378080 examples [05:58, 1346.84 examples/s][A
+Generating train examples...: 379462 examples [05:59, 1356.95 examples/s][A
+Generating train examples...: 380845 examples [06:00, 1364.51 examples/s][A
+Generating train examples...: 382229 examples [06:01, 1370.29 examples/s][A
+Generating train examples...: 383613 examples [06:02, 1374.13 examples/s][A
+Generating train examples...: 384996 examples [06:03, 1376.55 examples/s][A
+Generating train examples...: 386378 examples [06:04, 1378.10 examples/s][A
+Generating train examples...: 387762 examples [06:05, 1379.74 examples/s][A
+Generating train examples...: 389146 examples [06:06, 1380.88 examples/s][A
+Generating train examples...: 390529 examples [06:07, 1381.23 examples/s][A
+Generating train examples...: 391912 examples [06:08, 1380.99 examples/s][A
+Generating train examples...: 393294 examples [06:09, 1380.69 examples/s][A
+Generating train examples...: 394676 examples [06:10, 1379.54 examples/s][A
+Generating train examples...: 396060 examples [06:11, 1380.71 examples/s][A
+Generating train examples...: 397442 examples [06:12, 1380.68 examples/s][A
+Generating train examples...: 398823 examples [06:13, 1380.36 examples/s][A
+Generating train examples...: 400204 examples [06:14, 1380.00 examples/s][A
+Generating train examples...: 401588 examples [06:15, 1380.96 examples/s][A
+Generating train examples...: 402971 examples [06:16, 1381.30 examples/s][A
+Generating train examples...: 404353 examples [06:17, 1381.50 examples/s][A
+Generating train examples...: 405735 examples [06:18, 1380.34 examples/s][A
+Generating train examples...: 407116 examples [06:19, 1380.26 examples/s][A
+Generating train examples...: 408497 examples [06:20, 1380.23 examples/s][A
+Generating train examples...: 409878 examples [06:21, 1380.38 examples/s][A
+Generating train examples...: 411259 examples [06:22, 1379.13 examples/s][A
+Generating train examples...: 412641 examples [06:23, 1379.73 examples/s][A
+Generating train examples...: 414021 examples [06:24, 1379.78 examples/s][A
+Generating train examples...: 415401 examples [06:25, 1378.98 examples/s][A
+Generating train examples...: 416781 examples [06:26, 1379.05 examples/s][A
+Generating train examples...: 418161 examples [06:27, 1379.33 examples/s][A
+Generating train examples...: 419541 examples [06:28, 1379.26 examples/s][Acsp shape (59940, 64, 6)
+Subject: 9
+Computing rank from data with rank=None
+    Using tolerance 2.1e+02 (2.2e-16 eps * 66 dim * 1.4e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.6e+02 (2.2e-16 eps * 66 dim * 1.8e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.1e+02 (2.2e-16 eps * 66 dim * 1.4e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.6e+02 (2.2e-16 eps * 66 dim * 1.8e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 420921 examples [06:38, 361.38 examples/s] [A
+Generating train examples...: 422302 examples [06:39, 464.25 examples/s][A
+Generating train examples...: 423683 examples [06:40, 579.73 examples/s][A
+Generating train examples...: 425064 examples [06:41, 701.87 examples/s][A
+Generating train examples...: 426445 examples [06:42, 823.24 examples/s][A
+Generating train examples...: 427826 examples [06:43, 936.16 examples/s][A
+Generating train examples...: 429206 examples [06:44, 1035.75 examples/s][A
+Generating train examples...: 430587 examples [06:45, 1119.67 examples/s][A
+Generating train examples...: 431968 examples [06:46, 1187.05 examples/s][A
+Generating train examples...: 433349 examples [06:47, 1239.09 examples/s][A
+Generating train examples...: 434730 examples [06:48, 1278.37 examples/s][A
+Generating train examples...: 436112 examples [06:49, 1307.55 examples/s][A
+Generating train examples...: 437493 examples [06:50, 1328.62 examples/s][A
+Generating train examples...: 438874 examples [06:51, 1343.79 examples/s][A
+Generating train examples...: 440255 examples [06:52, 1354.49 examples/s][A
+Generating train examples...: 441636 examples [06:53, 1361.99 examples/s][A
+Generating train examples...: 443018 examples [06:54, 1367.67 examples/s][A
+Generating train examples...: 444400 examples [06:55, 1371.84 examples/s][A
+Generating train examples...: 445782 examples [06:56, 1374.70 examples/s][A
+Generating train examples...: 447165 examples [06:57, 1376.93 examples/s][A
+Generating train examples...: 448547 examples [06:58, 1378.16 examples/s][A
+Generating train examples...: 449929 examples [06:59, 1379.01 examples/s][A
+Generating train examples...: 451311 examples [07:00, 1378.79 examples/s][A
+Generating train examples...: 452694 examples [07:01, 1379.77 examples/s][A
+Generating train examples...: 454077 examples [07:02, 1380.62 examples/s][A
+Generating train examples...: 455460 examples [07:03, 1381.21 examples/s][A
+Generating train examples...: 456842 examples [07:04, 1379.93 examples/s][A
+Generating train examples...: 458223 examples [07:05, 1379.82 examples/s][A
+Generating train examples...: 459604 examples [07:06, 1379.46 examples/s][A
+Generating train examples...: 460984 examples [07:07, 1379.52 examples/s][A
+Generating train examples...: 462364 examples [07:08, 1378.41 examples/s][A
+Generating train examples...: 463743 examples [07:09, 1378.52 examples/s][A
+Generating train examples...: 465122 examples [07:10, 1378.47 examples/s][A
+Generating train examples...: 466501 examples [07:11, 1377.66 examples/s][A
+Generating train examples...: 467880 examples [07:12, 1377.80 examples/s][A
+Generating train examples...: 469259 examples [07:13, 1377.98 examples/s][A
+Generating train examples...: 470637 examples [07:14, 1376.49 examples/s][A
+Generating train examples...: 472014 examples [07:15, 1375.48 examples/s][A
+Generating train examples...: 473393 examples [07:16, 1376.31 examples/s][A
+Generating train examples...: 474771 examples [07:17, 1376.74 examples/s][A
+Generating train examples...: 476148 examples [07:18, 1376.28 examples/s][A
+Generating train examples...: 477525 examples [07:19, 1375.13 examples/s][A
+Generating train examples...: 478902 examples [07:20, 1375.55 examples/s][Acsp shape (59940, 64, 6)
+Subject: 10
+Computing rank from data with rank=None
+    Using tolerance 2.4e+02 (2.2e-16 eps * 66 dim * 1.6e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 7.2e+02 (2.2e-16 eps * 66 dim * 4.9e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.4e+02 (2.2e-16 eps * 66 dim * 1.6e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 7.2e+02 (2.2e-16 eps * 66 dim * 4.9e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 480278 examples [07:30, 381.81 examples/s] [A
+Generating train examples...: 481660 examples [07:31, 488.02 examples/s][A
+Generating train examples...: 483042 examples [07:32, 605.78 examples/s][A
+Generating train examples...: 484424 examples [07:33, 728.70 examples/s][A
+Generating train examples...: 485806 examples [07:34, 849.24 examples/s][A
+Generating train examples...: 487189 examples [07:35, 960.50 examples/s][A
+Generating train examples...: 488572 examples [07:36, 1057.44 examples/s][A
+Generating train examples...: 489955 examples [07:37, 1137.67 examples/s][A
+Generating train examples...: 491338 examples [07:38, 1201.54 examples/s][A
+Generating train examples...: 492718 examples [07:39, 1249.94 examples/s][A
+Generating train examples...: 494100 examples [07:40, 1286.59 examples/s][A
+Generating train examples...: 495483 examples [07:41, 1313.97 examples/s][A
+Generating train examples...: 496865 examples [07:42, 1333.66 examples/s][A
+Generating train examples...: 498244 examples [07:43, 1346.74 examples/s][A
+Generating train examples...: 499627 examples [07:44, 1357.14 examples/s][A
+Generating train examples...: 501008 examples [07:45, 1364.14 examples/s][A
+Generating train examples...: 502388 examples [07:46, 1368.74 examples/s][A
+Generating train examples...: 503768 examples [07:47, 1371.78 examples/s][A
+Generating train examples...: 505151 examples [07:48, 1374.84 examples/s][A
+Generating train examples...: 506532 examples [07:49, 1376.60 examples/s][A
+Generating train examples...: 507913 examples [07:50, 1377.16 examples/s][A
+Generating train examples...: 509293 examples [07:51, 1376.59 examples/s][A
+Generating train examples...: 510672 examples [07:52, 1376.33 examples/s][A
+Generating train examples...: 512050 examples [07:53, 1375.63 examples/s][A
+Generating train examples...: 513427 examples [07:54, 1375.35 examples/s][A
+Generating train examples...: 514803 examples [07:55, 1373.92 examples/s][A
+Generating train examples...: 516178 examples [07:56, 1373.29 examples/s][A
+Generating train examples...: 517552 examples [07:57, 1372.58 examples/s][A
+Generating train examples...: 518926 examples [07:58, 1372.89 examples/s][A
+Generating train examples...: 520300 examples [07:59, 1372.10 examples/s][A
+Generating train examples...: 521674 examples [08:00, 1372.43 examples/s][A
+Generating train examples...: 523048 examples [08:01, 1372.83 examples/s][A
+Generating train examples...: 524422 examples [08:02, 1373.06 examples/s][A
+Generating train examples...: 525796 examples [08:03, 1372.71 examples/s][A
+Generating train examples...: 527170 examples [08:04, 1373.09 examples/s][A
+Generating train examples...: 528544 examples [08:05, 1373.29 examples/s][A
+Generating train examples...: 529919 examples [08:06, 1373.79 examples/s][A
+Generating train examples...: 531294 examples [08:07, 1374.05 examples/s][A
+Generating train examples...: 532669 examples [08:08, 1374.23 examples/s][A
+Generating train examples...: 534044 examples [08:09, 1374.33 examples/s][A
+Generating train examples...: 535420 examples [08:10, 1374.82 examples/s][A
+Generating train examples...: 536797 examples [08:11, 1375.42 examples/s][A
+Generating train examples...: 538174 examples [08:12, 1375.87 examples/s][Acsp shape (59940, 64, 6)
+Subject: 11
+Computing rank from data with rank=None
+    Using tolerance 1.5e+04 (2.2e-16 eps * 66 dim * 1e+18  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 4.6e+04 (2.2e-16 eps * 66 dim * 3.1e+18  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 1.5e+04 (2.2e-16 eps * 66 dim * 1e+18  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 4.6e+04 (2.2e-16 eps * 66 dim * 3.1e+18  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 539550 examples [08:23, 356.57 examples/s] [A
+Generating train examples...: 540929 examples [08:24, 458.74 examples/s][A
+Generating train examples...: 542310 examples [08:25, 573.93 examples/s][A
+Generating train examples...: 543690 examples [08:26, 695.98 examples/s][A
+Generating train examples...: 545070 examples [08:27, 817.63 examples/s][A
+Generating train examples...: 546451 examples [08:28, 931.68 examples/s][A
+Generating train examples...: 547832 examples [08:29, 1032.41 examples/s][A
+Generating train examples...: 549214 examples [08:30, 1117.10 examples/s][A
+Generating train examples...: 550595 examples [08:31, 1184.83 examples/s][A
+Generating train examples...: 551976 examples [08:32, 1237.55 examples/s][A
+Generating train examples...: 553357 examples [08:33, 1277.09 examples/s][A
+Generating train examples...: 554739 examples [08:34, 1306.70 examples/s][A
+Generating train examples...: 556121 examples [08:35, 1328.22 examples/s][A
+Generating train examples...: 557502 examples [08:36, 1343.45 examples/s][A
+Generating train examples...: 558883 examples [08:37, 1353.99 examples/s][A
+Generating train examples...: 560264 examples [08:38, 1361.91 examples/s][A
+Generating train examples...: 561646 examples [08:39, 1367.79 examples/s][A
+Generating train examples...: 563028 examples [08:40, 1371.82 examples/s][A
+Generating train examples...: 564409 examples [08:41, 1374.50 examples/s][A
+Generating train examples...: 565791 examples [08:42, 1376.51 examples/s][A
+Generating train examples...: 567172 examples [08:43, 1377.56 examples/s][A
+Generating train examples...: 568553 examples [08:44, 1378.36 examples/s][A
+Generating train examples...: 569935 examples [08:45, 1379.17 examples/s][A
+Generating train examples...: 571316 examples [08:46, 1379.65 examples/s][A
+Generating train examples...: 572697 examples [08:47, 1379.70 examples/s][A
+Generating train examples...: 574078 examples [08:48, 1378.54 examples/s][A
+Generating train examples...: 575458 examples [08:49, 1377.77 examples/s][A
+Generating train examples...: 576837 examples [08:50, 1377.74 examples/s][A
+Generating train examples...: 578216 examples [08:51, 1377.59 examples/s][A
+Generating train examples...: 579594 examples [08:52, 1377.58 examples/s][A
+Generating train examples...: 580972 examples [08:53, 1376.38 examples/s][A
+Generating train examples...: 582351 examples [08:54, 1376.89 examples/s][A
+Generating train examples...: 583729 examples [08:55, 1377.02 examples/s][A
+Generating train examples...: 585107 examples [08:56, 1377.18 examples/s][A
+Generating train examples...: 586485 examples [08:57, 1376.35 examples/s][A
+Generating train examples...: 587862 examples [08:58, 1376.29 examples/s][A
+Generating train examples...: 589239 examples [08:59, 1376.46 examples/s][A
+Generating train examples...: 590616 examples [09:00, 1375.42 examples/s][A
+Generating train examples...: 591994 examples [09:01, 1375.96 examples/s][A
+Generating train examples...: 593373 examples [09:02, 1376.87 examples/s][A
+Generating train examples...: 594752 examples [09:03, 1377.24 examples/s][A
+Generating train examples...: 596130 examples [09:04, 1376.16 examples/s][A
+Generating train examples...: 597509 examples [09:05, 1376.98 examples/s][A
+Generating train examples...: 598887 examples [09:06, 1377.19 examples/s][Acsp shape (59940, 64, 6)
+Subject: 12
+Computing rank from data with rank=None
+    Using tolerance 4.8e+02 (2.2e-16 eps * 66 dim * 3.3e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 4.8e+02 (2.2e-16 eps * 66 dim * 3.3e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 4.8e+02 (2.2e-16 eps * 66 dim * 3.3e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 4.8e+02 (2.2e-16 eps * 66 dim * 3.3e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 600265 examples [09:15, 384.37 examples/s] [A
+Generating train examples...: 601641 examples [09:16, 490.21 examples/s][A
+Generating train examples...: 603018 examples [09:17, 607.51 examples/s][A
+Generating train examples...: 604390 examples [09:18, 729.02 examples/s][A
+Generating train examples...: 605766 examples [09:19, 848.74 examples/s][A
+Generating train examples...: 607143 examples [09:20, 959.15 examples/s][A
+Generating train examples...: 608520 examples [09:21, 1055.14 examples/s][A
+Generating train examples...: 609897 examples [09:22, 1134.59 examples/s][A
+Generating train examples...: 611274 examples [09:23, 1197.73 examples/s][A
+Generating train examples...: 612652 examples [09:24, 1246.45 examples/s][A
+Generating train examples...: 614030 examples [09:25, 1283.06 examples/s][A
+Generating train examples...: 615407 examples [09:26, 1309.84 examples/s][A
+Generating train examples...: 616784 examples [09:27, 1329.17 examples/s][A
+Generating train examples...: 618161 examples [09:28, 1343.03 examples/s][A
+Generating train examples...: 619539 examples [09:29, 1353.12 examples/s][A
+Generating train examples...: 620914 examples [09:30, 1358.77 examples/s][A
+Generating train examples...: 622288 examples [09:31, 1362.74 examples/s][A
+Generating train examples...: 623662 examples [09:32, 1365.34 examples/s][A
+Generating train examples...: 625036 examples [09:33, 1367.63 examples/s][A
+Generating train examples...: 626409 examples [09:34, 1368.65 examples/s][A
+Generating train examples...: 627782 examples [09:35, 1369.38 examples/s][A
+Generating train examples...: 629154 examples [09:36, 1369.80 examples/s][A
+Generating train examples...: 630527 examples [09:37, 1370.54 examples/s][A
+Generating train examples...: 631899 examples [09:38, 1369.49 examples/s][A
+Generating train examples...: 633273 examples [09:39, 1370.65 examples/s][A
+Generating train examples...: 634647 examples [09:40, 1371.39 examples/s][A
+Generating train examples...: 636023 examples [09:41, 1372.60 examples/s][A
+Generating train examples...: 637399 examples [09:42, 1373.37 examples/s][A
+Generating train examples...: 638774 examples [09:43, 1373.69 examples/s][A
+Generating train examples...: 640148 examples [09:44, 1373.73 examples/s][A
+Generating train examples...: 641522 examples [09:45, 1373.80 examples/s][A
+Generating train examples...: 642896 examples [09:46, 1371.72 examples/s][A
+Generating train examples...: 644268 examples [09:47, 1371.58 examples/s][A
+Generating train examples...: 645640 examples [09:48, 1371.61 examples/s][A
+Generating train examples...: 647012 examples [09:49, 1369.02 examples/s][A
+Generating train examples...: 648385 examples [09:50, 1370.09 examples/s][A
+Generating train examples...: 649760 examples [09:51, 1371.43 examples/s][A
+Generating train examples...: 651135 examples [09:52, 1372.23 examples/s][A
+Generating train examples...: 652508 examples [09:53, 1371.63 examples/s][A
+Generating train examples...: 653880 examples [09:54, 1370.17 examples/s][A
+Generating train examples...: 655252 examples [09:55, 1370.43 examples/s][A
+Generating train examples...: 656625 examples [09:56, 1370.94 examples/s][A
+Generating train examples...: 657996 examples [09:57, 1369.91 examples/s][Acsp shape (59940, 64, 6)
+Subject: 13
+Computing rank from data with rank=None
+    Using tolerance 2.4e+02 (2.2e-16 eps * 66 dim * 1.6e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.1e+02 (2.2e-16 eps * 66 dim * 2.1e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 2.4e+02 (2.2e-16 eps * 66 dim * 1.6e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+Computing rank from data with rank=None
+    Using tolerance 3.1e+02 (2.2e-16 eps * 66 dim * 2.1e+16  max singular value)
+    Estimated rank (mag): 66
+    MAG: rank 66 computed from 66 data channels with 0 projectors
+Reducing data rank from 66 -> 66
+Estimating covariance using EMPIRICAL
+Done.
+
+Generating train examples...: 659366 examples [10:07, 385.60 examples/s] [A
+Generating train examples...: 660735 examples [10:08, 491.30 examples/s][A
+Generating train examples...: 662104 examples [10:09, 608.12 examples/s][A
+Generating train examples...: 663473 examples [10:10, 729.64 examples/s][A
+Generating train examples...: 664842 examples [10:11, 848.45 examples/s][A
+Generating train examples...: 666212 examples [10:12, 957.78 examples/s][A
+Generating train examples...: 667582 examples [10:13, 1052.74 examples/s][A
+Generating train examples...: 668952 examples [10:14, 1131.21 examples/s][A
+Generating train examples...: 670324 examples [10:15, 1194.11 examples/s][A
+Generating train examples...: 671697 examples [10:16, 1242.60 examples/s][A
+Generating train examples...: 673071 examples [10:17, 1279.21 examples/s][A
+Generating train examples...: 674444 examples [10:18, 1305.78 examples/s][A
+Generating train examples...: 675816 examples [10:19, 1324.70 examples/s][A
+Generating train examples...: 677185 examples [10:20, 1337.60 examples/s][A
+Generating train examples...: 678556 examples [10:21, 1347.35 examples/s][A
+Generating train examples...: 679929 examples [10:22, 1354.90 examples/s][A
+Generating train examples...: 681302 examples [10:23, 1360.24 examples/s][A
+Generating train examples...: 682675 examples [10:24, 1363.95 examples/s][A
+Generating train examples...: 684048 examples [10:25, 1366.49 examples/s][A
+Generating train examples...: 685422 examples [10:26, 1368.45 examples/s][A
+Generating train examples...: 686795 examples [10:27, 1369.72 examples/s][A
+Generating train examples...: 688168 examples [10:28, 1370.59 examples/s][A
+Generating train examples...: 689541 examples [10:29, 1371.05 examples/s][A
+Generating train examples...: 690915 examples [10:30, 1371.93 examples/s][A
+Generating train examples...: 692288 examples [10:31, 1372.20 examples/s][A
+Generating train examples...: 693661 examples [10:32, 1372.26 examples/s][A
+Generating train examples...: 695034 examples [10:33, 1372.17 examples/s][A
+Generating train examples...: 696408 examples [10:34, 1372.43 examples/s][A
+Generating train examples...: 697781 examples [10:35, 1372.47 examples/s][A
+Generating train examples...: 699154 examples [10:36, 1371.61 examples/s][A
+Generating train examples...: 700526 examples [10:37, 1371.37 examples/s][A
+Generating train examples...: 701898 examples [10:38, 1371.49 examples/s][A
+Generating train examples...: 703270 examples [10:39, 1371.28 examples/s][A
+Generating train examples...: 704642 examples [10:40, 1370.10 examples/s][A
+Generating train examples...: 706013 examples [10:41, 1370.22 examples/s][A
+Generating train examples...: 707385 examples [10:42, 1370.56 examples/s][A
+Generating train examples...: 708756 examples [10:43, 1370.36 examples/s][A
+Generating train examples...: 710127 examples [10:44, 1369.69 examples/s][A
+Generating train examples...: 711498 examples [10:45, 1369.91 examples/s][A
+Generating train examples...: 712868 examples [10:46, 1369.94 examples/s][A
+Generating train examples...: 714240 examples [10:47, 1370.44 examples/s][A
+Generating train examples...: 715611 examples [10:48, 1369.50 examples/s][A
+Generating train examples...: 716982 examples [10:49, 1369.92 examples/s][A
+Generating train examples...: 718353 examples [10:50, 1370.06 examples/s][A
+                                                                         [A                                                                csp shape (59940, 64, 6)
+Traceback (most recent call last):
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 309, in incomplete_dir
+    yield tmp_dir
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/dataset_builder.py", line 691, in download_and_prepare
+    self._download_and_prepare(
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/dataset_builder.py", line 1584, in _download_and_prepare
+    future = split_builder.submit_split_generation(
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/split_builder.py", line 341, in submit_split_generation
+    return self._build_from_generator(**build_kwargs)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/split_builder.py", line 418, in _build_from_generator
+    writer.write(key, example)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/writer.py", line 239, in write
+    self._shuffler.add(key, serialized_example)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/shuffle.py", line 268, in add
+    self._add_to_bucket(hkey, data)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/shuffle.py", line 242, in _add_to_bucket
+    self._buckets[bucket_number].add(hkey, data)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/shuffle.py", line 170, in add
+    self._fobj.write(data)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow/python/lib/io/file_io.py", line 100, in write
+    self._writable_file.append(compat.as_bytes(file_content))
+tensorflow.python.framework.errors_impl.UnknownError: /users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e6/1.0.0.incompleteB0O45U/bucket_5111bdec-00c8-4d11-8f90-9eda56033624_000.tmp; Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/bin/tfds", line 8, in <module>
+    sys.exit(launch_cli())
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/scripts/cli/main.py", line 109, in launch_cli
+    app.run(main, flags_parser=_parse_flags)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/scripts/cli/main.py", line 104, in main
+    args.subparser_fn(args)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/scripts/cli/build.py", line 312, in _build_datasets
+    process_builder_fn(builder)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/scripts/cli/build.py", line 551, in _download_and_prepare
+    builder.download_and_prepare(
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/logging/__init__.py", line 166, in __call__
+    return function(*args, **kwargs)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/dataset_builder.py", line 678, in download_and_prepare
+    with utils.incomplete_dir(self.data_dir) as tmp_data_dir:
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 313, in incomplete_dir
+    tmp_path.rmtree()
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/etils/epath/gpath.py", line 211, in rmtree
+    self._backend.rmtree(self._path_str)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/site-packages/etils/epath/backend.py", line 141, in rmtree
+    shutil.rmtree(path)
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/shutil.py", line 731, in rmtree
+    onerror(os.rmdir, path, sys.exc_info())
+  File "/users/PAS2301/alialavi/miniconda3/envs/tf1/lib/python3.10/shutil.py", line 729, in rmtree
+    os.rmdir(path)
+OSError: [Errno 39] Directory not empty: '/users/PAS2301/alialavi/tensorflow_datasets/dtu_td_cmaa_50ov_01s/all_e6/1.0.0.incompleteB0O45U'

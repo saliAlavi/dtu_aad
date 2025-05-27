@@ -1,0 +1,162 @@
+import tensorflow as tf
+import tensorflow_datasets as tfds
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import datetime
+from sklearn.metrics import accuracy_score, precision_score, recall_score
+from sklearn.model_selection import train_test_split
+from tensorflow.keras import layers, losses
+from tensorflow.keras.datasets import fashion_mnist
+from tensorflow.keras.models import Model
+import tensorflow_models as tfm
+import tensorflow_hub as hub
+import os
+from scipy import signal
+from models import *
+# tf.get_logger().setLevel('INFO')
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
+# Press the green button in the gutter to run the script.
+latent_dim = 64
+
+"""
+To solve the cudalib problem:https://github.com/pytorch/pytorch/issues/85773
+"""
+best_val_acc = {}
+curr_fold=0
+
+class CustomCallback(tf.keras.callbacks.Callback):
+    def on_epoch_end(self, epoch, logs=None):
+        # Your custom code here
+        if logs['val_acc']>best_val_acc[curr_fold]:
+            best_val_acc[curr_fold]=logs['val_acc']
+
+    def on_train_end(selfself, epoch, logs=None):
+        print(f"The overall accuracy is {np.average(np.fromiter(best_val_acc.values(), dtype=float))}")
+
+
+
+def feature_extraction(sample):
+    x = sample['eeg']
+    x = x.numpy()
+    eeg_welch=np.zeros((65, 66))
+
+    for ch in range(66):
+        eeg_welch[:, ch]=signal.welch(x[:,ch])
+
+    eeg_welch= tf.convert_to_tensor(eeg_welch, dtype=tf.float32)
+    return {'eeg':eeg_welch, 'attr_lr':x['attr_lr']}
+
+def map_stft(x):
+    frame_lenth= 10
+    frame_step=1
+    fft_length=32
+    data = x['data']
+    curr_data = data[:, 0]
+    curr_data = tf.signal.stft(curr_data, frame_length=frame_lenth, frame_step=frame_step, fft_length=fft_length)
+    shape = (16,76, 17)
+    data_real = tf.zeros([*shape, 64])
+    data_imag = tf.zeros([*shape, 64])
+    for ch in range(64):
+        curr_data = data[:, ch]
+        curr_data = tf.signal.stft(curr_data, frame_length=frame_lenth, frame_step=frame_step, fft_length=fft_length)
+        data_real[..., ch] = tf.math.real(curr_data)
+        data_imag[..., ch] = tf.math.imag(curr_data)
+    data_stft = {'data_f_real': data_real, 'data_f_imag':data_imag}
+    return {**data_stft, **x}
+
+if __name__ == '__main__':
+    # tf.config.run_functions_eagerly(True)
+    batch_size= 4
+    epochs=100
+    # dataset_name='kuleuven_stft/5s_sub16'
+    # dataset_name = 'kuleuven_td/5s_sub12'
+    # dataset_name = 'ku_luven_td/5s_sub16'
+    # dataset_name = 'kuleuven_stft/5s_all'
+    # dataset_name = 'ku_luven_tfds/5s_sub1'
+    dataset_name = 'dtu_td_cmaa/5s_sub1'
+    train_splits = ['train[20%:]', 'train[:20%]+train[40%:]', 'train[:40%]+train[60%:]', 'train[:60%]+train[80%:]','train[:80%]']
+    test_splits = ['train[:20%]', 'train[20%:40%]','train[40%:60%]','train[60%:80%]','train[80%:]']
+
+    train_splits = ['train[:80%]']
+    test_splits = ['train[80%:]']
+    #
+    # train_splits = [ 'train[:20%]+train[40%:]']
+    # test_splits = ['train[40%:60%]']
+    for curr_fold,(train_split, test_split) in enumerate(zip(train_splits, test_splits)):
+        best_val_acc[curr_fold]=0
+        (ds_train, ds_test), dataset_info = tfds.load(dataset_name, split=[train_split, test_split], shuffle_files=False,with_info=True,)
+
+        ds_train= ds_train.cache().shuffle(dataset_info.splits[train_split].num_examples).batch(batch_size).prefetch(tf.data.experimental.AUTOTUNE)
+        ds_test = ds_test.cache().shuffle(dataset_info.splits[test_split].num_examples).batch(batch_size).prefetch(tf.data.experimental.AUTOTUNE)
+        # builder = tfds.builder(dataset_name)
+
+        # x_real_ds_real = ds_train.map(lambda x: x['data_f_real'])
+        # x_real_ds_imag = ds_train.map(lambda x: x['data_f_imag'])
+
+        # x_real_ds_real = ds_train.map(lambda x: x['eeg_f_real'])
+        # x_real_ds_imag = ds_train.map(lambda x: x['eeg_f_imag'])
+
+        # x_real_ds_real = ds_train.map(lambda x: x['data'])
+        # x_real_ds_imag = ds_train.map(lambda x: x['data'])
+
+        x_ds_real = ds_train.map(lambda x: x['data_f_real'])
+        x_ds_imag = ds_train.map(lambda x: x['data_f_imag'])
+        x_ds_t = ds_train.map(lambda x: x['data'])
+
+
+
+        # model = CNNAttnSTFT()
+        # model = CNNAttnTD()
+        # model = AttnTF()
+        model =AttnTFContrastive()
+
+        model.normalizer_real.adapt(x_ds_real)
+        model.normalizer_imag.adapt(x_ds_imag)
+        model.normalizer_t.adapt(x_ds_t)
+
+        # for x in ds_train:
+        #     tf.print(tf.shape(x['data']))
+        #     break
+
+        customCallback =CustomCallback()
+        opt = tf.keras.optimizers.Adam(learning_rate=0.001)
+        model.compile(optimizer=opt, loss=losses.SparseCategoricalCrossentropy() )
+
+        # data_sample = next(iter(ds_train))
+        # model.build(data_sample)
+        # model.compile(optimizer=opt, loss=losses.SparseCategoricalCrossentropy(), contrastive_optimizer=keras.optimizers.Adam(), probe_optimizer=keras.optimizers.Adam())
+        # reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_p_acc', factor=0.2,
+        #                               patience=5, min_lr=0.001)
+        reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_acc', factor=0.2,
+                                                         patience=5, min_lr=0.001)
+        log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+
+        tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
+        # checkpoint_callback = keras.callbacks.ModelCheckpoint('best_model.tf',
+        #                                                       monitor='val_accuracy',
+        #                                                       save_best_only=True,
+        #                                                       mode='max',
+        #                                                       verbose=1)
+        # batch_size = 250
+        # dataset_name = 'ku_luven_tfds/5s_sub1'
+        # (ds_train, ds_test), dataset_info = tfds.load(dataset_name, split=[train_split, test_split],
+        #                                               shuffle_files=False, with_info=True, )
+        #
+        # ds_train = ds_train.cache().shuffle(dataset_info.splits[train_split].num_examples).batch(batch_size).prefetch(
+        #     tf.data.experimental.AUTOTUNE)
+        # for data in ds_train:
+        #     y = data['eeg']
+        #     # tf.print(tf.reduce_sum(y)/batch_size)
+        #     tf.print(tf.shape(y))
+        #     break
+        history = model.fit(ds_train,
+                        epochs=epochs,
+                        shuffle=True,
+                        validation_data=(ds_test),
+                        callbacks=[reduce_lr, customCallback,tensorboard_callback])
+
+        # print(history)
+
+

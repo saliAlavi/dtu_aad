@@ -1,0 +1,198 @@
+import tensorflow as tf
+import tensorflow_datasets as tfds
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+from sklearn.metrics import accuracy_score, precision_score, recall_score
+from sklearn.model_selection import train_test_split
+from tensorflow.keras import layers, losses
+from tensorflow.keras.datasets import fashion_mnist
+from tensorflow.keras.models import Model
+import tensorflow_models as tfm
+import tensorflow_hub as hub
+import os
+from scipy import signal
+from models import *
+# tf.get_logger().setLevel('INFO')
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
+# Press the green button in the gutter to run the script.
+latent_dim = 64
+
+"""
+To solve the cudalib problem:https://github.com/pytorch/pytorch/issues/85773
+"""
+best_val_acc = {}
+curr_fold=0
+# class CustomCallback(tf.keras.callbacks.Callback):
+#     def on_epoch_end(self, epoch, logs=None):
+#         # Your custom code here
+#         if logs['val_p_acc']>best_val_acc[curr_fold]:
+#             best_val_acc[curr_fold]=logs['val_p_acc']
+#
+#     def on_train_end(selfself, epoch, logs=None):
+#         print(f"The overall accuracy is {np.average(np.fromiter(best_val_acc.values(), dtype=float))}")
+
+class CustomCallback(tf.keras.callbacks.Callback):
+    def on_epoch_end(self, epoch, logs=None):
+        # Your custom code here
+        if logs['val_acc']>best_val_acc[curr_fold]:
+            best_val_acc[curr_fold]=logs['val_acc']
+
+    def on_train_end(selfself, epoch, logs=None):
+        print(f"The overall accuracy is {np.average(np.fromiter(best_val_acc.values(), dtype=float))}")
+
+class Autoencoder(Model):
+    def __init__(self):
+        super(Autoencoder, self).__init__()
+        self.normalizer = layers.Normalization(axis=1)
+        self.normalizer_test = layers.Normalization(axis=2)
+        self.latent_dim = 100
+        self.encoder = tf.keras.Sequential([
+          layers.Flatten(),
+            layers.Dense(400, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dense(300, activation='relu'),
+            layers.Dropout(.2, input_shape=(2,)),
+        ])
+        self.decoder = tf.keras.Sequential([
+          layers.Dense(300, activation='relu'),
+            layers.Dropout(.2, input_shape=(2,)),
+            layers.Dense(400, activation='relu'),
+            layers.Dropout(.2, input_shape=(2,)),
+            layers.Dense(200, activation='relu'),
+          layers.Dense(100, activation='relu'),
+          layers.Dense(4, activation='sigmoid')
+          # layers.Reshape((28, 28))
+        ])
+
+        self.accuracy_metric=tf.keras.metrics.SparseCategoricalAccuracy(name="accuracy", dtype=None)
+        self.val_acc_metric = tf.keras.metrics.SparseCategoricalAccuracy(name="accuracy", dtype=None)
+
+    def train_step(self, data):
+        # Unpack the data. Its structure depends on your model and
+        # on what you pass to `fit()`.
+        x, y = data['eeg'], data['att_lr']
+        x = self.normalizer(x)
+        # noise = tf.random.normal([1,128,512], 0, 1, tf.float32)
+        with tf.GradientTape() as tape:
+            y_pred = self(x, training=True)  # Forward pass
+            # Compute the loss value
+            # (the loss function is configured in `compile()`)
+            loss = self.compiled_loss(y, y_pred )
+
+        # Compute gradients
+        trainable_vars = self.trainable_variables
+        gradients = tape.gradient(loss, trainable_vars)
+        # Update weights
+        self.optimizer.apply_gradients(zip(gradients, trainable_vars))
+        # Update metrics (includes the metric that tracks the loss)
+        # self.compiled_metrics.update_state(y, y_pred)
+        # Return a dict mapping metric names to current value
+        self.accuracy_metric.update_state(y, y_pred)
+
+        tmp= {m.name: m.result() for m in self.metrics}
+        tmp['loss']=loss
+        return {m.name: m.result() for m in self.metrics}
+
+    def test_step(self, data):
+        x, y = data['eeg'], data['att_lr']
+        x = self.normalizer(x)
+        y_pred = self(x, training=False)
+        self.compiled_loss(y, y_pred)
+        self.accuracy_metric.update_state(y, y_pred)
+        return {m.name: m.result() for m in self.metrics}
+
+    def call(self, x):
+        encoded = self.encoder(x)
+        decoded = self.decoder(encoded)
+        return decoded
+
+    @property
+    def metrics(self):
+        # We list our `Metric` objects here so that `reset_states()` can be
+        # called automatically at the start of each epoch
+        # or at the start of `evaluate()`.
+        # If you don't implement this property, you have to call
+        # `reset_states()` yourself at the time of your choosing.
+        return [self.accuracy_metric,]
+
+def feature_extraction(sample):
+    x = sample['eeg']
+    x = x.numpy()
+    eeg_welch=np.zeros((65, 66))
+    for ch in range(66):
+        eeg_welch[:, ch]=signal.welch(x[:,ch])
+
+    eeg_welch= tf.convert_to_tensor(eeg_welch, dtype=tf.float32)
+    return {'eeg':eeg_welch, 'attr_lr':x['attr_lr']}
+
+
+if __name__ == '__main__':
+    # tf.config.run_functions_eagerly(True)
+    batch_size= 16
+    epochs=120
+    # dataset_name='ku_luven_welch/5s_sub2'
+    # dataset_name = 'ku_luven_td/5s_sub1'
+    dataset_name='ku_luven_tfds/5s_sub4'
+    # dataset_name='ku_luven_td/5s_all'
+    train_splits = ['train[20%:]', 'train[:20%]+train[40%:]', 'train[:40%]+train[60%:]', 'train[:60%]+train[80%:]','train[:80%]']
+    test_splits = ['train[:20%]', 'train[20%:40%]','train[40%:60%]','train[60%:80%]','train[80%:]']
+
+    # train_splits = ['train[:80%]']
+    # test_splits = ['train[80%:]']
+    #
+    # train_splits = [ 'train[:20%]+train[40%:]']
+    # test_splits = ['train[20%:40%]']
+    for curr_fold,(train_split, test_split) in enumerate(zip(train_splits, test_splits)):
+        best_val_acc[curr_fold]=0
+        (ds_train, ds_test), dataset_info = tfds.load(dataset_name, split=[train_split, test_split], shuffle_files=False,with_info=True,)
+        ds_train= ds_train.cache().shuffle(dataset_info.splits[train_split].num_examples).batch(batch_size).prefetch(tf.data.experimental.AUTOTUNE)
+        ds_test = ds_test.cache().shuffle(dataset_info.splits[test_split].num_examples).batch(batch_size).prefetch(tf.data.experimental.AUTOTUNE)
+        builder = tfds.builder(dataset_name)
+
+        x_real_ds_real = ds_train.map(lambda x: x['eeg_f_real'])
+        x_real_ds_imag = ds_train.map(lambda x: x['eeg_f_imag'])
+        # x_ds_train = ds_train.map(lambda x: x['eeg'])
+        # y_ds_train = ds_train.map(lambda x: x['att_lr'])
+        # x_ds_test = ds_test.map(lambda x: x['eeg'])
+        # y_ds_test = ds_test.map(lambda x: x['att_lr'])
+
+        # model = Attention_2()
+        # model =Autoencoder()
+        model = CNNAttnSTFT()
+
+        model.normalizer_real.adapt(x_real_ds_real)
+        model.normalizer_imag.adapt(x_real_ds_imag)
+
+
+
+
+        customCallback =CustomCallback()
+        opt = tf.keras.optimizers.Adam(learning_rate=0.001)
+        model.compile(optimizer=opt, loss=losses.SparseCategoricalCrossentropy() )
+        # reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_p_acc', factor=0.2,
+        #                               patience=5, min_lr=0.001)
+        reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(monitor='val_acc', factor=0.2,
+                                                         patience=5, min_lr=0.001)
+        # checkpoint_callback = keras.callbacks.ModelCheckpoint('best_model.tf',
+        #                                                       monitor='val_accuracy',
+        #                                                       save_best_only=True,
+        #                                                       mode='max',
+        #                                                       verbose=1)
+        history = model.fit(ds_train,
+                        epochs=epochs,
+                        shuffle=True,
+                        validation_data=(ds_test),
+                        callbacks=[reduce_lr, customCallback])
+
+        print(history)
+
+

@@ -1,0 +1,8 @@
+
+The following have been reloaded with a version change:
+  1) miniconda3/23.3.1-py310 => miniconda3/4.10.3-py37
+
+  File "/users/PAS2301/alialavi/projects/AAD-CMAA/train_all_3.py", line 135
+    dataset_sub_names = [f'sub{i}' for i in range(10,19)]] +['all']+  [f'all_e{i}' for i in range(1,19)]
+                                                         ^
+SyntaxError: unmatched ']'

@@ -1,0 +1,8 @@
+cd /usr/lib/wsl/lib/
+conda activate tf
+sudo rm -r libcuda.so.1
+1
+sudo rm -r libcuda.so
+sudo ln -s libcuda.so.1.1 libcuda.so.1
+sudo ln -s libcuda.so.1.1 libcuda.so
+sudo ldconfig
